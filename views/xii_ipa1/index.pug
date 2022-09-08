@@ -1,0 +1,22 @@
+html
+    head
+        title Selamat Datang Di Web Sman 5 Tegal
+    body
+        a(href="http://localhost:3000/xii_ipa1/create") Tambah Siswa Baru
+        table    
+            tr
+                td No
+                td Nama
+                td Alamat
+                td Kd_Hobi
+                td Aksi
+            for data, i in result
+                tr
+                    td #{data.no}
+                    td #{data.nama}
+                    td #{data.alamat}
+                    td #{data.kd_hobi}
+                    td
+                        form(action=`/xii_ipa1/${data.no}?_method=DELETE`, method="post")
+                            input(type="submit", value="Hapus")
+                            a(href=`/xii_ipa1/edit/${data.no}`) Ubah

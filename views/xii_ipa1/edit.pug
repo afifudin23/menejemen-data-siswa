@@ -1,0 +1,15 @@
+html
+    head
+        title Ubah Biodata
+    body
+        form(action=`/xii_ipa1/${result.no}?_method=PUT` method="post")
+            label Nama
+                input(type="text" name="nama" value=result.nama)
+                br
+            label Alamat
+                input(type="text" name="alamat" value=result.alamat)
+                br
+            label Kd_Hobi
+                input(type="text" name="kd_hobi" value=result.kd_hobi)
+                br
+            input(type="submit" value="Simpan")
