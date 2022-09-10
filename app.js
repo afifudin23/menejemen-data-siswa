@@ -9,7 +9,7 @@ const xii_ipa1 = require("./routes/xii_ipa1");
 
 // Using pug template engine
 app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "pug");
+app.set("view engine", "ejs");
 
 // connecting route to database
 app.use("/xii_ipa1", (req, res, next) => {
