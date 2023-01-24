@@ -1,0 +1,33 @@
+<main>
+  <div class="jumbotron">
+    <h1>Ini Adalah Halaman Utama</h1>
+    <p>Selamat datang di Website Kami</p>
+  </div>
+</main>
+<% const sekolah="SMAN 5 TEGAL" %>
+  <h1 class="text-center">Table Data Siswa <%= sekolah %>
+  </h1>
+
+  <table class="text-center" style="margin: auto" border="1" cellspacing="0" cellpadding="15">
+    <thead>
+      <tr>
+        <th rowspan="2">No.</th>
+        <th colspan="3">Data Siswa</th>
+      </tr>
+      <tr>
+        <th>Nama</th>
+        <th>Hobi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% result.map((siswa, i)=> { %>
+
+        <tr>
+          <td><%= i + 1 %></td>
+          <td><%= siswa.nama %></td>
+          <td><%= siswa.hobi.nama_hobi %></td>
+        </tr>
+
+        <% }) %>
+    </tbody>
+  </table>

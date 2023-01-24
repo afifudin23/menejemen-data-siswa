@@ -1,13 +1,13 @@
 const Sequelize = require("sequelize");
 
 module.exports = new Sequelize(
-    "sman_5_tegal",
-    "root",
-    "1234",
-    {
-        "dialect": "mysql",
-        "host": "localhost"
-    }
+  "sman_5_tegal",
+  "root",
+  "1234",
+  {
+    "dialect": "mysql",
+    "host": "127.0.0.1"
+  }
 );
 
 /* // Check Connection
